@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cart | Muyassar Muslim Wear</title>
+    <meta
+      name="keywords"
+      content="Fashion, Muslim-Muslimah, Pakaian Anak, Busana, Abaya, Baju Koko, Khimar, Hijab, Kemeja, Gamis"
+    />
+    <link rel="icon" href="images/logo/logo.jpg" type="image/jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal"
+  >
+    <!-- NAVBAR -->
+    <nav id="header" class="w-full z-30 top-0 py-1">
+      <div
+        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"
+      >
+        <label for="menu-toggle" class="cursor-pointer md:hidden block">
+          <svg
+            class="fill-current text-gray-900"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+          >
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div
+          class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1"
+          id="menu"
+        >
+          <nav>
+            <ul
+              class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0"
+            >
+              <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="shop.html"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="order-1 md:order-2">
+          <a
+            class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+            href="index.html"
+          >
+            <img src="images/logo/png.png" alt="Logo" style="height: 36px" />
+          </a>
+        </div>
+
+        <div class="order-2 md:order-3 flex items-center" id="nav-content">
+          <a
+            class="inline-block no-underline hover:text-black"
+            href="login.html"
+          >
+            <svg
+              class="fill-current hover:text-black"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <circle fill="none" cx="12" cy="7" r="3" />
+              <path
+                d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="pl-3 inline-block no-underline hover:text-black"
+            href="cart.html"
+          >
+            <svg
+              class="fill-current hover:text-black"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z"
+              />
+              <circle cx="10.5" cy="18.5" r="1.5" />
+              <circle cx="17.5" cy="18.5" r="1.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- KONTEN -->
+    <section class="container mx-auto py-12 px-4">
+      <h1 class="text-3xl font-bold text-gray-900 mb-8">Keranjang Belanja</h1>
+
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- DAFTAR PRODUK -->
+        <div class="w-full md:w-2/3">
+          <!-- ITEM 1 -->
+          <div class="cart-item bg-white rounded-lg shadow-sm p-6 mb-4">
+            <div class="flex items-center gap-6">
+              <img
+                src="images/products/men/5.jpg"
+                alt="Baju Koko Casual"
+                class="w-24 h-24 object-cover rounded-lg"
+              />
+              <div class="flex-1">
+                <h3 class="font-medium text-gray-900">Baju Koko Casual</h3>
+                <p class="text-gray-600 text-sm mt-1">Ukuran: L</p>
+                <p class="item-price text-gray-900 font-medium mt-2">160000</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="flex items-center border rounded-lg">
+                  <button class="quantity-minus quantity-btn rounded-l-lg">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    value="1"
+                    class="quantity-input w-12 text-center border-x bg-transparent"
+                    min="1"
+                  />
+                  <button class="quantity-plus quantity-btn rounded-r-lg">
+                    +
+                  </button>
+                </div>
+                <button class="remove-btn text-gray-400 hover:text-red-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      d="M 15 4 C 14.476563 4 13.941406 4.183594 13.5625 4.5625 C 13.183594 4.941406 13 5.476563 13 6 L 13 7 L 7 7 L 7 9 L 8 9 L 8 25 C 8 26.644531 9.355469 28 11 28 L 23 28 C 24.644531 28 26 26.644531 26 25 L 26 9 L 27 9 L 27 7 L 21 7 L 21 6 C 21 5.476563 20.816406 4.941406 20.4375 4.5625 C 20.058594 4.183594 19.523438 4 19 4 Z M 15 6 L 19 6 L 19 7 L 15 7 Z M 10 9 L 24 9 L 24 25 C 24 25.554688 23.554688 26 23 26 L 11 26 C 10.445313 26 10 25.554688 10 25 Z M 12 12 L 12 23 L 14 23 L 14 12 Z M 16 12 L 16 23 L 18 23 L 18 12 Z M 20 12 L 20 23 L 22 23 L 22 12 Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="cart-item bg-white rounded-lg shadow-sm p-6 mb-4">
+            <div class="flex items-center gap-6">
+              <img
+                src="images/products/men/6.png"
+                alt="Khimar Syari"
+                class="w-24 h-24 object-cover rounded-lg"
+              />
+              <div class="flex-1">
+                <h3 class="font-medium text-gray-900">Gamis Pria</h3>
+                <p class="text-gray-600 text-sm mt-1">Ukuran: M</p>
+                <p class="item-price text-gray-900 font-medium mt-2">300000</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="flex items-center border rounded-lg">
+                  <button class="quantity-minus quantity-btn rounded-l-lg">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    value="1"
+                    class="quantity-input w-12 text-center border-x bg-transparent"
+                    min="1"
+                  />
+                  <button class="quantity-plus quantity-btn rounded-r-lg">
+                    +
+                  </button>
+                </div>
+                <button class="remove-btn text-gray-400 hover:text-red-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      d="M 15 4 C 14.476563 4 13.941406 4.183594 13.5625 4.5625 C 13.183594 4.941406 13 5.476563 13 6 L 13 7 L 7 7 L 7 9 L 8 9 L 8 25 C 8 26.644531 9.355469 28 11 28 L 23 28 C 24.644531 28 26 26.644531 26 25 L 26 9 L 27 9 L 27 7 L 21 7 L 21 6 C 21 5.476563 20.816406 4.941406 20.4375 4.5625 C 20.058594 4.183594 19.523438 4 19 4 Z M 15 6 L 19 6 L 19 7 L 15 7 Z M 10 9 L 24 9 L 24 25 C 24 25.554688 23.554688 26 23 26 L 11 26 C 10.445313 26 10 25.554688 10 25 Z M 12 12 L 12 23 L 14 23 L 14 12 Z M 16 12 L 16 23 L 18 23 L 18 12 Z M 20 12 L 20 23 L 22 23 L 22 12 Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RINGKASAN BELANJA -->
+        <div class="w-full md:w-1/3">
+          <div class="bg-white rounded-lg shadow-sm p-6">
+            <h2 class="text-xl font-bold text-gray-900 mb-4">
+              Ringkasan Belanja
+            </h2>
+            <div class="space-y-3">
+              <div class="flex justify-between">
+                <span>Subtotal</span>
+                <span id="subtotal">0 IDR</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Pengiriman</span>
+                <span id="shipping">20000 IDR</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Pajak (10%)</span>
+                <span id="tax">0 IDR</span>
+              </div>
+              <hr class="my-4" />
+              <div class="flex justify-between font-bold">
+                <span>Total</span>
+                <span id="total">0 IDR</span>
+              </div>
+            </div>
+
+            <button
+              class="checkout-btn w-full bg-gray-900 text-white py-3 rounded-lg mt-6 hover:bg-gray-800 transition-colors"
+            >
+              Lanjut ke Pembayaran
+            </button>
+            <button
+              class="checkout-btn w-full bg-white text-white py-3 rounded-lg mt-6 transition-colors"
+            >
+              <a
+                href="shop.html"
+                class="text-gray-600 hover:text-gray-900 text-sm"
+              >
+                ← Kembali berbelanja
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container mx-auto bg-white py-8 border-t border-gray-400">
+      <div class="container flex px-3 py-8">
+        <div class="w-full mx-auto flex flex-wrap">
+          <div class="flex w-full lg:w-1/2">
+            <div class="px-3 md:px-0">
+              <div class="flex justify-between text-teal-600 sm:justify-start">
+                <img
+                  src="images/logo/png.png"
+                  alt="Logo"
+                  style="width: 250px; height: auto"
+                />
+              </div>
+              <p class="py-4">
+                Welcome to our store!
+                <br />
+                Busana syar'i yang elegan, nyaman, dan penuh makna untuk setiap
+                langkah Anda.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex w-full lg:w-1/2 lg:justify-end lg:text-right mt-6 md:mt-0"
+          >
+            <div class="px-3 md:px-0">
+              <h3 class="text-left font-bold text-gray-900">
+                Follow Our Store:
+              </h3>
+              <div class="w-full flex items-center py-4 mt-0">
+                <a
+                  href="https://wa.me/62895342276133"
+                  class="mx-2 transition-colors duration-300 hover:text-black"
+                >
+                  <svg
+                    class="w-6 h-6 fill-current"
+                    fill="currentColor"
+                    viewBox="0 0 308 308"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g id="XMLID_468_">
+                        <path
+                          id="XMLID_469_"
+                          d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z"
+                        ></path>
+                        <path
+                          id="XMLID_470_"
+                          d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143 ,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/muyassar.muslimwear"
+                  class="mx-2 transition-colors duration-300 hover:text-black"
+                >
+                  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://shopee.co.id/muyassarcollection99"
+                  class="mx-2 transition-colors duration-300 hover:text-black"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M22.567,4.538c-0.292-0.306-0.702-0.481-1.125-0.481H16.9c-0.46-2.286-2.481-4.014-4.9-4.014 S7.559,1.77,7.1,4.056H2.557c-0.422,0-0.832,0.176-1.125,0.481C1.139,4.844,0.982,5.264,1.001,5.691L1.71,20.945 c0.081,1.737,1.497,3.098,3.225,3.098h14.13c1.728,0,3.145-1.36,3.225-3.097L22.999,5.69C23.018,5.264,22.861,4.844,22.567,4.538z M12,2.043c1.307,0,2.41,0.845,2.82,2.014H9.18C9.59,2.888,10.693,2.043,12,2.043z M20.292,20.853 c-0.031,0.667-0.57,1.189-1.227,1.189H4.935c-0.657,0-1.196-0.522-1.227-1.19L3.021,6.056h17.959L20.292,20.853z"
+                    ></path>
+                    <path
+                      fill="currentColor"
+                      d="M16.06,16.623c0,1.9-1.8,3.38-4.09,3.38c-2.491,0-4.25-1.77-4.25-1.77l1.1-1.75c0,0,1.99,1.49,3.15,1.49 c1.12,0,2.06-0.62,2.06-1.35c0-0.92-0.6-1.29-2.41-1.95c-1.55-0.57-3.46-1.27-3.46-3.43c0-1.88,1.67-3.3,3.88-3.3 c2.485,0,3.797,1.388,3.8,1.39l-1.04,1.72c-0.001,0-1.519-1.09-2.76-1.09c-1.08,0-1.86,0.54-1.86,1.28 c0,0.64,0.56,0.96,2.13,1.53C13.89,13.342,16.06,14.132,16.06,16.623z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/EdqbjvEm1ZEF2GyC9"
+                  class="mx-2 transition-colors duration-300 hover:text-black"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 fill-current"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title></title>
+                      <g id="location">
+                        <path
+                          d="M16,1A11,11,0,0,0,5,12C5,23.24,15,30.51,15.42,30.81a1,1,0,0,0,1.16,0C17,30.51,27,23.24,27,12A11,11,0,0,0,16,1Zm0,16a5,5,0,1,1,5-5A5,5,0,0,1,16,17Z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const formatIDR = (num) => {
+          return new Intl.NumberFormat("id-ID", {
+            style: "currency",
+            currency: "IDR",
+            maximumFractionDigits: 0,
+          }).format(num);
+        };
+
+        const updateTotal = () => {
+          let subtotal = 0;
+          let totalItems = 0;
+
+          document.querySelectorAll(".cart-item").forEach((item) => {
+            const price = parseInt(
+              item.querySelector(".item-price").textContent
+            );
+            const quantity = parseInt(
+              item.querySelector(".quantity-input").value
+            );
+            subtotal += price * quantity;
+            totalItems += quantity;
+          });
+
+          const shippingPerFiveItems = 20000;
+          const shipping = Math.ceil(totalItems / 5) * shippingPerFiveItems;
+          const tax = subtotal * 0.1;
+          const total = subtotal + shipping + tax;
+
+          document.getElementById("subtotal").textContent = formatIDR(subtotal);
+          document.getElementById("tax").textContent = formatIDR(tax);
+          document.getElementById("shipping")
+            ? (document.getElementById("shipping").textContent =
+                formatIDR(shipping))
+            : null;
+          document.getElementById("total").textContent = formatIDR(total);
+        };
+
+        const handleQuantity = (btn, operation) => {
+          const input = btn.parentElement.querySelector(".quantity-input");
+          let value = parseInt(input.value);
+
+          if (operation === "minus" && value > 1) {
+            input.value = --value;
+          }
+          if (operation === "plus") {
+            input.value = ++value;
+          }
+
+          updateTotal();
+        };
+
+        document.querySelectorAll(".quantity-minus").forEach((btn) => {
+          btn.addEventListener("click", () => handleQuantity(btn, "minus"));
+        });
+
+        document.querySelectorAll(".quantity-plus").forEach((btn) => {
+          btn.addEventListener("click", () => handleQuantity(btn, "plus"));
+        });
+
+        document.querySelectorAll(".quantity-input").forEach((input) => {
+          input.addEventListener("change", updateTotal);
+        });
+
+        document.querySelectorAll(".remove-btn").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            const item = e.target.closest(".cart-item");
+            item.classList.add(
+              "opacity-0",
+              "transition-opacity",
+              "duration-300"
+            );
+
+            setTimeout(() => {
+              item.remove();
+              updateTotal();
+              checkEmptyCart();
+            }, 300);
+          });
+        });
+
+        const checkEmptyCart = () => {
+          if (document.querySelectorAll(".cart-item").length === 0) {
+            document.querySelector("section.container").innerHTML = `
+        <div class="text-center py-20">
+          <svg class="mx-auto h-24 w-24 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+          </svg>
+          <h3 class="mt-4 text-lg font-medium text-gray-900">Keranjang kosong</h3>
+          <p class="mt-1 text-gray-500">Belum ada item di keranjang belanja Anda</p>
+          <a href="shop.html" class="mt-6 inline-block bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800">
+            Mulai Belanja
+          </a>
+        </div>
+      `;
+          }
+        };
+
+        updateTotal();
+      });
+    </script>
+  </body>
+</html>
